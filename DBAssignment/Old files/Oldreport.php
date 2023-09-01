@@ -4,12 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Date-Based Sales Report</title>
-    <link rel="stylesheet" href="style.css"> <!-- Link to the external CSS file -->
+    <link rel="stylesheet" href="style.css"> <!-- external CSS file -->
 </head>
 <body>
-    <div class="container"> <!-- Apply the "container" class here -->
+    <div class="container"> 
         <h2>Date-Based Sales Report</h2>
-        <form action="" method="post"> <!-- Remove the action to submit to the same page -->
+        <form action="" method="post"> 
             <label for="startDate">Start Date:</label>
             <input type="date" id="startDate" name="startDate" required><br>
             
@@ -21,7 +21,7 @@
     </div>
     
     <!-- Display the report data here -->
-    <div class="invoice-list"> <!-- Apply the "invoice-list" class here -->
+    <div class="invoice-list"> 
         <?php
         if (isset($_POST["generateReport"])) {
             include 'generate_report_logic.php'; 
